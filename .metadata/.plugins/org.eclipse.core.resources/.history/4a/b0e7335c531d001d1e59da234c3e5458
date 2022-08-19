@@ -1,0 +1,25 @@
+package Academy.EndToEnd;
+
+import java.io.IOException;
+
+import org.junit.Assert;
+
+import pageObject.LandingPage;
+import resource.Base;
+
+public class Display extends Base {
+	
+	
+	public void displaycontract() throws IOException{
+		
+		driver=intilizing();
+		driver.get("https:qaclickacademy.com");
+		
+		LandingPage dis= new LandingPage(driver);
+		
+		Assert.assertTrue(dis.Contract().isDisplayed());
+		
+		
+	}
+
+}

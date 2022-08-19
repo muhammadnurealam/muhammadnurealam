@@ -1,0 +1,58 @@
+import java.time.Duration;
+import java.util.Arrays;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+
+public class Practice {
+
+	public static void main(String[] args) throws InterruptedException {
+	
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\alam_\\seleniumWorkspace\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		//driver.get("https://the-internet.herokuapp.com/");
+		driver.get("http://qaclickacademy.com/practice.php");
+		WebElement table=driver.findElement(By.id("product"));
+		
+	int row=	table.findElements(By.tagName("tr")).size();
+	int column=driver.findElements(By.tagName("tr")).get(5).findElements(By.tagName("td")).size();
+	
+	List<WebElement> second=driver.findElements(By.tagName("tr")).get(2).findElements(By.tagName("td"));
+	
+	System.out.println(row)	;
+	System.out.println(column);
+	System.out.println(second.get(0).getText());
+	System.out.println(second.get(1).getText());
+	System.out.println(second.get(2).getText());
+		
+		
+		
+		
+		
+		
+		
+		}	
+		
+		
+		}
+		
+	
+
+	
+	
+	
+        
+	
+
+

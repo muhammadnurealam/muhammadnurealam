@@ -1,0 +1,55 @@
+package Academy.EndToEnd;
+
+import java.io.IOException;
+
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import pageObject.LandingPage;
+import pageObject.LoginPage;
+import resource.Base;
+
+public class BaseHome extends Base {
+	
+	
+	@Test(dataProvider="getData")
+	
+	public void login(String email,String password) throws IOException {
+		
+		
+		driver=intilizing();
+		
+		driver.get("https:qaclickacademy.com");
+		
+		
+		LandingPage land=new LandingPage(driver);
+		
+		land.Signin().click();
+		
+		LoginPage log= new LoginPage(driver);
+		log.Email().sendKeys(email);
+		
+		log.Password().sendKeys(password);
+		log.Login().click();
+		
+	}
+	
+	@DataProvider
+	
+	public Object[][] getData() {
+		
+		Object [][] data= new Object[1][1];
+		
+		data[0][0]="nonrestected";
+		data[0][1]="11223";
+		
+		data[1][0]="restected";
+		data[1][1]="34455";
+		
+		return data;
+	}
+	
+	
+	
+
+}

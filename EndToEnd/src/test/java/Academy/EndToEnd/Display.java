@@ -1,0 +1,39 @@
+package Academy.EndToEnd;
+
+import java.io.IOException;
+
+import org.junit.Assert;
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import pageObject.LandingPage;
+import resource.Base;
+
+public class Display extends Base {
+	
+	public WebDriver driver;
+@BeforeTest
+	
+	public void inittlizing() throws IOException {
+		driver = intilizing();
+
+		driver.get(pro.getProperty("url"));
+	}	
+
+	@Test
+	public void displaycontract() throws IOException {
+
+		
+		LandingPage dis = new LandingPage(driver);
+
+		Assert.assertTrue(dis.Contract().isDisplayed());
+
+	}
+	@AfterTest
+	public void teardown() {
+		driver.close();
+	}
+
+}

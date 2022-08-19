@@ -1,0 +1,20 @@
+package giko.ExtendReport;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+public class ExtendsReportDemo{
+	
+	
+	
+	@Test
+	public void intialdemo(){
+
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\alam_\\seleniumWorkspace\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("http:rahulshettyacademy.com/AutomationPractice");
+	}
+
+}

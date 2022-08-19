@@ -1,0 +1,38 @@
+package Academy.EndToEnd;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.sql.Driver;
+import java.util.Properties;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Base {
+	 public WebDriver driver;
+
+	public void intilizing() throws IOException {
+
+    Properties pro= new Properties();
+    
+    FileInputStream fie= new FileInputStream("C:\\Users\\alam_\\seleniumWorkspace\\EndToEnd\\src\\main\\java\\Academy\\EndToEnd\\Data.properties");
+		
+		pro.load(fie);
+		
+	String browserName=	pro.getProperty("browser");
+	
+	if(browserName=="chrome") {
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\alam_\\seleniumWorkspace\\chromedriver.exe");
+		
+	}
+		
+	else if(browserName=="firefox")	{
+		
+	}
+	else if(browserName=="IE") {
+	}	
+	}
+	}
+
+

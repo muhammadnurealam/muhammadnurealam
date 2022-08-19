@@ -1,0 +1,5 @@
+package Academy.EndToEnd;
+
+public class Validate extends base {
+
+}

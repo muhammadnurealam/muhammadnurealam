@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="display">
+    <classes>
+      <class name="Academy.EndToEnd.Display"/>
+</classes>
+</test>
+
+<test name="validate">
+<classes>
+      <class name="Academy.EndToEnd.Validate"/>
+</classes>
+</test>
+
+<test name="basehome">
+<classes>
+      <class name="Academy.EndToEnd.BaseHome"/>
+</classes>
+</test>
+
+<test name= "apptest">
+
+<classes>
+      <class name="Academy.EndToEnd.AppTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

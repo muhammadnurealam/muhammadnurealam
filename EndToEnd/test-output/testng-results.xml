@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-08-17T21:34:54 EDT" name="Suite" finished-at="2022-08-17T21:35:08 EDT" duration-ms="14060">
+    <groups>
+    </groups>
+    <test started-at="2022-08-17T21:34:54 EDT" name="apptest" finished-at="2022-08-17T21:34:54 EDT" duration-ms="44">
+    </test> <!-- apptest -->
+    <test started-at="2022-08-17T21:34:54 EDT" name="display" finished-at="2022-08-17T21:35:05 EDT" duration-ms="11200">
+      <class name="Academy.EndToEnd.Display">
+        <test-method is-config="true" signature="inittlizing()[pri:0, instance:Academy.EndToEnd.Display@25ce9dc4]" started-at="2022-08-17T21:34:54 EDT" name="inittlizing" finished-at="2022-08-17T21:35:05 EDT" duration-ms="10671" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inittlizing -->
+        <test-method signature="displaycontract()[pri:0, instance:Academy.EndToEnd.Display@25ce9dc4]" started-at="2022-08-17T21:35:05 EDT" name="displaycontract" finished-at="2022-08-17T21:35:05 EDT" duration-ms="98" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- displaycontract -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Academy.EndToEnd.Display@25ce9dc4]" started-at="2022-08-17T21:35:05 EDT" name="teardown" finished-at="2022-08-17T21:35:05 EDT" duration-ms="369" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Academy.EndToEnd.Display -->
+    </test> <!-- display -->
+    <test started-at="2022-08-17T21:34:54 EDT" name="validate" finished-at="2022-08-17T21:35:05 EDT" duration-ms="11302">
+      <class name="Academy.EndToEnd.Validate">
+        <test-method is-config="true" signature="inittlizing()[pri:0, instance:Academy.EndToEnd.Validate@413d1baf]" started-at="2022-08-17T21:34:54 EDT" name="inittlizing" finished-at="2022-08-17T21:35:05 EDT" duration-ms="11008" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inittlizing -->
+        <test-method signature="pagetitle()[pri:0, instance:Academy.EndToEnd.Validate@413d1baf]" started-at="2022-08-17T21:35:05 EDT" name="pagetitle" finished-at="2022-08-17T21:35:05 EDT" duration-ms="58" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pagetitle -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Academy.EndToEnd.Validate@413d1baf]" started-at="2022-08-17T21:35:05 EDT" name="teardown" finished-at="2022-08-17T21:35:05 EDT" duration-ms="188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Academy.EndToEnd.Validate -->
+    </test> <!-- validate -->
+    <test started-at="2022-08-17T21:34:54 EDT" name="basehome" finished-at="2022-08-17T21:35:08 EDT" duration-ms="14060">
+      <class name="Academy.EndToEnd.BaseHome">
+        <test-method is-config="true" signature="intillizing()[pri:0, instance:Academy.EndToEnd.BaseHome@183ec003]" started-at="2022-08-17T21:34:54 EDT" name="intillizing" finished-at="2022-08-17T21:34:59 EDT" duration-ms="4443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intillizing -->
+        <test-method signature="login(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Academy.EndToEnd.BaseHome@183ec003]" started-at="2022-08-17T21:34:59 EDT" name="login" data-provider="getData" finished-at="2022-08-17T21:35:06 EDT" duration-ms="7337" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ajajaj]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[11223]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[nonrestected]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="login(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Academy.EndToEnd.BaseHome@183ec003]" started-at="2022-08-17T21:35:06 EDT" name="login" data-provider="getData" finished-at="2022-08-17T21:35:08 EDT" duration-ms="2062" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[hjdjkdkd]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[637337]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[rastected]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:Academy.EndToEnd.BaseHome@183ec003]" started-at="2022-08-17T21:35:08 EDT" name="Teardown" finished-at="2022-08-17T21:35:08 EDT" duration-ms="99" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+      </class> <!-- Academy.EndToEnd.BaseHome -->
+    </test> <!-- basehome -->
+  </suite> <!-- Suite -->
+</testng-results>

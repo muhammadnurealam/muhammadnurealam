@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Object.RediffHome&apos; to &apos;AmazonReturn&apos;&#x0D;&#x0A;- Original project: &apos;PageObjectdemo&apos;&#x0D;&#x0A;- Original element: &apos;Object.RediffHome&apos;&#x0D;&#x0A;- Renamed element: &apos;Object.AmazonReturn&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;RediffHome&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;Object{RediffHome.java[RediffHome" matchStrategy="1" name="AmazonReturn" qualified="false" references="true" similarDeclarations="false" stamp="1660482618875" textual="false" version="1.0"/>
+</session>

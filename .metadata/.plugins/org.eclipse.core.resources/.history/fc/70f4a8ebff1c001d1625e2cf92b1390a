@@ -1,0 +1,38 @@
+package Academy.EndToEnd;
+
+import java.io.IOException;
+
+import org.testng.annotations.Test;
+
+import pageObject.LandingPage;
+import pageObject.LoginPage;
+import resource.Base;
+
+public class BaseHome extends Base {
+	
+	
+	@Test
+	public void login() throws IOException {
+		
+		
+		driver=intilizing();
+		
+		driver.get("https:qaclickacademy.com");
+		
+		
+		LandingPage land=new LandingPage(driver);
+		
+		land.Signin().click();
+		
+		LoginPage log= new LoginPage(driver);
+		log.Email().sendKeys("akal@ymail.com");
+		
+		log.Password().sendKeys("12333");
+		log.Login().click();
+		
+	}
+	
+	
+	
+
+}

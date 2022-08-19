@@ -1,0 +1,26 @@
+package Academy.EndToEnd;
+
+import java.io.IOException;
+
+import org.testng.annotations.Test;
+
+import junit.framework.Assert;
+import pageObject.LandingPage;
+import resource.Base;
+
+public class Validate extends Base {
+
+	@Test
+
+	public void pagetitle() throws IOException {
+
+		driver = intilizing();
+
+		driver.get(pro.getProperty("url"));
+		LandingPage lo = new LandingPage(driver);
+
+		Assert.assertEquals(lo.getTitle().getText(), "FEATURED COURSES");
+
+	}
+
+}

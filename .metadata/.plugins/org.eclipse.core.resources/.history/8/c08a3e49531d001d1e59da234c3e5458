@@ -1,0 +1,20 @@
+package Academy.EndToEnd;
+
+import java.io.IOException;
+
+import resource.Base;
+
+public class Display extends Base {
+	
+	
+	public void displaycontract() throws IOException{
+		
+		driver=intilizing();
+		driver.get("https:qaclickacademy.com");
+		
+		
+		
+		
+	}
+
+}
